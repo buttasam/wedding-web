@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='cs')
 
     head
 
@@ -7,8 +7,9 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
         meta(name='author', content='')
+        meta(name='robots', content='noindex, nofollow')
 
-        title Grayscale - Start Bootstrap Theme
+        title svatba.butta.cz
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
@@ -27,125 +28,135 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+                a.navbar-brand.js-scroll-trigger(href='#page-top') svatba.butta.cz
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') About
+                            a.nav-link.js-scroll-trigger(href='#about') Aktuální informace
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#projects') Projects
+                            a.nav-link.js-scroll-trigger(href='#projects') Program
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#signup') Contact
+                            a.nav-link.js-scroll-trigger(href='#contacts') Kontakty
 
         // Masthead
         header.masthead
             .container.d-flex.h-100.align-items-center
                 .mx-auto.text-center
-                    h1.mx-auto.my-0.text-uppercase Grayscale
-                    h2.text-white-50.mx-auto.mt-2.mb-5 A free, responsive, one page Bootstrap theme created by Start Bootstrap.
-                    a.btn.btn-primary.js-scroll-trigger(href='#about') Get Started
+                    h1.mx-auto.my-0.text.pb-5 26.6.2021 Svatba
+                
+                    h2.text-white.mx-auto.mt-2.mb-5 S radostí vám oznamujeme,<br>že dne 26. 6. 2021 se uskuteční <br> svatba Samuela Butty a Kláry Mlýnkové.
+                
+                    a.btn.btn-primary.js-scroll-trigger(href='#about') Více informací
 
         // About
         section#about.about-section.text-center
             .container
                 .row
                     .col-lg-8.mx-auto
-                        h2.text-white.mb-4 Built with Bootstrap 4
-                        p.text-white-50
-                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
-                            a(href='https://startbootstrap.com/theme/grayscale/') the preview page
-                            | . The theme is open source, and you can use it for any purpose, personal or commercial.
-                img.img-fluid(src='assets/img/ipad.png', alt='')
+                        h2.text-black.mb-4 Aktuální informace
+                        div.alert.alert-success.pb-0
+                            h3.text-black.mb-1 <i class="fas fa-virus"></i> Situace ohledně covidu
+                            p.text-black-50.text-lg-left
+                                | Se svatbou stále počítáme a doufáme, že se <strong>uskuteční v termínu</strong>, i přes současnou pandemickou situaci.
+                                | O případných změnách vás budeme informovat zde na webu.
+                        div.alert.alert-primary.pb-0
+                            h3.text-black.mb-1 <i class="fas fa-info-circle"></i> Prosíme, potvrďte nám svoji účast
+                            p.text-black-50.text-lg-left
+                                | Prosíme, pro potvrzení úšasti nám napište zprávu nebo email. Kontakt na nás najdete v sekci v
+                                a.js-scroll-trigger(href='#contacts') kontakty.
 
         // Projects
         section#projects.projects-section.bg-light
             .container
-                // Featured Project Row
-                .row.align-items-center.no-gutters.mb-4.mb-lg-5
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Shoreline
-                            p.text-black-50.mb-0
-                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+                .col-lg-12.mx-auto.text-center
+                        h2.text.mb-4 Předběžný program
                 // Project One Row
                 .row.justify-content-center.no-gutters.mb-5.mb-lg-0
                     .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='')
+                        img.img-fluid(src='assets/img/salvator-evangelicky.jpg', alt='')
                     .col-lg-6
-                        .bg-black.text-center.h-100.project
+                        .text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
-                                    p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
+                                    h4.text-black 14:00 - Obřad
+                                    p.mb-0.text-black-50
+                                        | Svatební obřad se uskuteční v <a href="https://goo.gl/maps/kio7Hw5amvKRqkWa7" target="_blank">Kostele U Salvátora</a> 
+                                        | (poblíž Staroměstkého námestí na Praze 1). Obřad je pro nás nejdůležitější část svatebního dne, 
+                                        | prosíme proto o <strong>slavnostní oblečení</strong> a včasný příchod.
                                     hr.d-none.d-lg-block.mb-0.ml-0
                 // Project Two Row
                 .row.justify-content-center.no-gutters
                     .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='')
+                        img.img-fluid(src='assets/img/opero-vnitroblok.jpg', alt='')
                     .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
+                        .bg.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
-                                    p.mb-0.text-white-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
+                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-black 15:00 - Hostina
+                                    p.mb-0.text-black-50
+                                        | Po obřadu se přesuneme přes ulici do prostor objektu <a href="https://goo.gl/maps/DtADVGtWn6Hx7Q2X6" target="_blank">Opero</a>, 
+                                        | kde společně strávíme celé odpoledne a večer.
+                                    br
+                                    p.mb-0.text-black-50
+                                        | Hostina bude formou rautu a bude se jednat spíše o <strong>dřívější večeři.</strong> 
+                                        | Po společné polévce si budete moci vybrat z několika studených i teplých jídel.
                                     hr.d-none.d-lg-block.mb-0.mr-0
-
-        // Signup
-        section#signup.signup-section
-            .container
-                .row
-                    .col-md-10.col-lg-8.mx-auto.text-center
-                        i.far.fa-paper-plane.fa-2x.mb-2.text-white
-                        h2.text-white.mb-5 Subscribe to receive updates!
-                        form.form-inline.d-flex
-                            input#inputEmail.form-control.flex-fill.mr-0.mr-sm-2.mb-3.mb-sm-0(type='email', placeholder='Enter email address...')
-                            button.btn.btn-primary.mx-auto(type='submit') Subscribe
-
+                // Project Three Row
+                .row.justify-content-center.no-gutters.mb-5.mb-lg-0
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/party.jpg', alt='')
+                    .col-lg-6
+                        .text-center.h-100.project
+                            .d-flex.h-100
+                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-black 22:00 - After party
+                                    p.mb-0.text-black-50
+                                        | Kdo ještě nebude unavený, může se s námi přesnuout na <strong>drink a tanec</strong> 
+                                        | do nedalekého podniku. Přesun bude zajištěn taxíky.
+                                    hr.d-none.d-lg-block.mb-0.ml-0
         // Contact
-        section.contact-section.bg-black
+        section#contacts.contact-section.bg-secondary
             .container
                 .row
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-map-marked-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Address
+                                h3.text.m-0 Adresa obřadu
                                 hr.my-4
-                                .small.text-black-50 4923 Market Street, Orlando FL
+                                .text-black
+                                    | Kostel U Salvátora
+                                    br
+                                    | Salvátorská 1110 00 Praha 1
+                                    br
+                                    | Staré Město
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-envelope.text-primary.mb-2
-                                h4.text-uppercase.m-0 Email
+                                h3.text.m-0 E-mail
                                 hr.my-4
-                                .small.text-black-50
-                                    a(href='#!') hello@yourdomain.com
+                                .text-black
+                                    | samuel@butta.cz
+                                    br
+                                    | klara.mlynkova@gmail.com
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-mobile-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Phone
+                                h3.text.m-0 Telefon
                                 hr.my-4
-                                .small.text-black-50 +1 (555) 902-8832
-                .social.d-flex.justify-content-center
-                    a.mx-2(href='#!')
-                        i.fab.fa-twitter
-                    a.mx-2(href='#!')
-                        i.fab.fa-facebook-f
-                    a.mx-2(href='#!')
-                        i.fab.fa-github
-
+                                .text-black 
+                                    | +420 775 984 272 (Sam)
+                                    br
+                                    | +420 720 515 674 (Klára)
         // Footer
-        footer.footer.bg-black.small.text-center.text-white-50
+        footer.footer.bg-secondary.small.text-center.text-black-50
             .container
-                | Copyright © Your Website 2020
+                | Copyright © svatba.butta.cz 2021
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')

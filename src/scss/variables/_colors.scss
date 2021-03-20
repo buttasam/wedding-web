@@ -1,11 +1,14 @@
 // Override Bootstrap color system
 
-$teal: #64a19d;
-$black: #000000;
+$teal: #457b9d;
+$black: #050505;
+$gray: #f0efeb;
 
 // Override Bootstrap default state colors
 
 $primary: $teal;
+$secondary: $gray;
+
 
 // Add colors to the color map
 
